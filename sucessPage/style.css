@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.firstStep{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+.firstStep img{
+    width: 200px;
+}
+ul li{
+    list-style-type: none;
+    text-align: left;
+    line-height: 1.5;
+}
+ul li i{
+    color: #000;
+    margin-right: 0.5rem;
+}
+.firstStep-container{
+    border: 1px solid;
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+    border-radius: 2rem;
+}
+.thanksMsg{
+    padding: 2rem 0rem;
+    background: #cac5c5;
+    border-radius: 2rem 2rem 0 0;
+}
+.StudentInfo{
+    background:linear-gradient(90deg, rgba(168,63,180,1) 0%, rgba(53,53,152,1) 70%, rgba(113,16,224,1) 100%);
+    width: 100%;
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    color: #fff;
+}
+.StudentInfo div p{
+    text-align: left;
+    margin: 0.5rem 0 0;
+}
+.StudentInfo img{
+    float: left;
+    margin-right: 1rem;
+    width: 50px;
+    border-radius: 50%;
+}
+.sampleVideo{
+    width: 100%;
+    max-width: 40%;
+    margin: 0 auto;
+}
+.newFeature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    background: #cac5c5;
+    padding: 4rem 5rem;
+    line-height: 1.5;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.newFeature img{
+    width: 200px;
+}
+.newFeature .feature{
+    text-align: right;
+    line-height: 1.7;
+}
+.feature button{
+    padding: 1rem 0.5rem;
+    background:linear-gradient(90deg, rgba(168,63,180,1) 0%, rgba(53,53,152,1) 70%, rgba(113,16,224,1) 100%);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    width: 300px;
+    color: #fff;
+    max-width: 300px;
+    margin: 1rem 0;
+}
+.btnWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.btn{
+    text-align: right;
+    padding: 1rem 0 ;
+}
+.btn button:nth-of-type(1){
+    width: 200px;
+    padding: 0.75rem;
+    margin-top: 1rem;
+}
+.btn button:nth-of-type(2){
+    width: 225px;
+    padding: 0.75rem;
+    margin-top: 1rem;
+}
+.btn button:nth-of-type(3){
+    width: 250px;
+    padding: 0.75rem;
+    margin-top: 1rem;
+}
+.btn.right{
+    text-align: left;
+}
+.btn button{
+    text-align: right;
+}
+.btn.right button{
+    text-align: left;
+}
+.website-Btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.website-Btn button:nth-child(1){
+    padding: 1rem 0.75rem;
+    background: rgb(250, 152, 4);
+    border-radius: 0.5rem;
+    width: 200px;
+    max-width: 200px;
+    border:none;
+    color: #fff;
+}
+.website-Btn button:nth-child(2){
+    padding: 1rem 0.75rem;
+    background: red;
+    border-radius: 0.5rem;
+    width: 200px;
+    max-width: 200px;
+    border:none;
+    color: #fff;
+}
+@media screen  and (max-width:480px) {
+    .StudentInfo{
+        max-width: 80%;
+    }
+    .sampleVideo {
+        max-width: 80%;
+
+    }.newFeature{
+        padding: 2rem;
+        justify-content: center;
+    }
+    .newFeature .feature{
+        text-align: center;
+    }
+    .btn button:nth-of-type(1){
+        width: 160px;
+        padding: 0.75rem;
+        margin-top: 1rem;
+    }
+    .btn button:nth-of-type(2){
+        width: 170px;
+        padding: 0.75rem;
+        margin-top: 1rem;
+    }
+    .btn button:nth-of-type(3){
+        width: 180px;
+        padding: 0.75rem;
+        margin-top: 1rem;
+    }
+    .website-Btn button:nth-child(2) {
+      margin-top: 1rem;
+    }
+    h2{
+        margin: 1rem;
+    }
+}
+@media screen and (max-width:767px) {
+    .StudentInfo{
+        max-width: 70%;
+    }
+    .sampleVideo {
+        max-width: 70%;
+
+    }.newFeature{
+        padding: 2rem;
+        justify-content: center;
+    }
+    .newFeature .feature{
+        text-align: center;
+    }
+}
+@media screen and (max-width:1024px) {
+    .StudentInfo{
+        max-width: 70%;
+    }
+    .sampleVideo {
+        max-width: 70%;
+
+    }.newFeature{
+        padding: 2rem;
+        justify-content: center;
+    }
+    .newFeature .feature{
+        text-align: center;
+    }
+}

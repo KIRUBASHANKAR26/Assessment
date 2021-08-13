@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #cac5c5;
+    font-size: 16px;
+    background-size: auto;
+    background-position: top center;
+    text-align: center;  
+}
+main{
+    min-height: 100vh;
+    color: #000;
+    padding: 5rem 2rem;
+}
+.left-column > h2{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.left-column > p{
+    margin-bottom:2rem;
+}
+.right-column > button:first-child{
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem 5rem;
+    background-color: hsl(248, 32%, 49%) ;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    color:  hsl(246, 25%, 77%);
+    margin-bottom: 1em;
+    box-shadow: 0 0.5em #D26E70;
+    cursor: pointer;
+}
+button span{
+    font-weight: 600;
+    color: #ffffff;
+}
+#form{
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+.right-column p{
+    color: hsl(246, 25%, 77%);
+}
+.input-index{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 4px;
+    font-weight: 600;
+    color:  hsl(249, 10%, 26%);
+    outline: none;
+    position: relative;
+}
+.input-index::placeholder{
+    font-weight: 600;
+}
+#form > button{
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem 2rem;
+    background:linear-gradient(90deg, rgba(168,63,180,1) 0%, rgba(53,53,152,1) 70%, rgba(113,16,224,1) 100%);
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    color:  #ffffff;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#form > button:hover{
+    color:#ffffff;
+    opacity: 80%;
+}
+#form p{
+    font-size: .6rem;
+    width: 100%;
+    padding: 0 2rem;
+}
+#form p span{
+    color:  hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+input:focus {
+    border: 2px solid  hsl(248, 47%, 29%);
+    border-radius: 4px;
+    color: hsl(249, 10%, 26%) ;
+    caret-color:hsl(248, 32%, 49%);
+}
+.form-control{
+    position: relative;
+    margin-bottom: 2rem;
+    border: none !important;
+}
+.form-control > img{
+    position: absolute;
+    top: 13px;
+    right: 25px;
+    visibility: hidden;
+}
+.form-control > small{
+    color:hsl(0, 100%, 74%);
+    text-align: left;
+    font-style: italic;
+    display: none;
+    font-size: 0.7em;
+}
+.form-control.error input{
+    border:2px solid  hsl(0, 100%, 74%) ;
+}
+.form-control.error img{
+    visibility: visible;
+}
+.form-control.error small{
+    display: block;
+}
+.student-bg{
+    background: url(./images/javier-trueba-iQPr1XkF5F0-unsplash.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.form-header{
+    font-size:1.5rem;
+}
+select option{
+    padding: 1rem 0.5rem !important;
+}
+.left-column h1 > span{
+    font-weight: 100;
+}
+.left-column > p{
+    display: none;
+}
+  
+@media screen and (min-width:40rem) {
+    body{
+        text-align: left;
+    }
+    main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .container{
+    display: flex;
+    }
+    .left-column{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 35%;
+    }
+    .right-column{
+    flex: 50%;
+    }   
+}
+@media screen and (min-width:77.5rem) {
+    body{
+        background-color: #cac5c5;
+    }
+    main{
+        padding: 10% 10%;
+        max-height: 100vh;
+    }
+    .left-column > h2
+    {
+        font-size: 3em;
+        line-height: 1;
+        padding-right: 1rem ;
+
+    }
+    .left-column > p{
+        padding: 8rem 7rem;
+        color: #fff;
+    }
+    .right-column{
+        flex: 25%;
+    }
+    .container{
+        gap: 3rem;
+    }
+    .right-column > button:first-child{
+        padding: 5% 5%;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 0.5em #D26E70;
+    } 
+    .left-column > p{
+        display: block;
+    }
+    .darkBg{
+        position: absolute;
+        background: black;
+        height: 330px;
+        width: 100%;
+        opacity: 64%;
+        max-width: 632px;
+        top: 104px;
+    }
+}
